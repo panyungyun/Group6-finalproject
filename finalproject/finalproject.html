@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #777;
+        }
+
+        p {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #008080;
+        }
+
+        #kMeansImage1,
+        #kMeansImage2,
+        #kMeansImage3 {
+            margin-top: 20px;
+        }
+
+        #kMeansImage1 img,
+        #kMeansImage2 img,
+        #kMeansImage3 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Add more styling as needed */
+
+    </style>
+    <title>如何運用大數據分析金融詐騙</title>
+</head>
+
+<body>
+    <h1>如何運用大數據分析金融詐騙</h1>
+
+    <h2>研究動機＆引言</h2>
+    <p>近年來，金融詐騙案件在全球範圍內急劇增加，給金融體系和普通民眾造成了嚴重的損失。這些詐騙行為多樣且隱匿，犯罪分子不斷采用新的手法來規避傳統防範措施。</p>
+    <p>我們研究的動機在於探索如何運用大數據分析方法，提高金融詐騙檢測的效率和精準度。大數據分析技術具有處理龐大且多樣數據源的能力，能夠從海量信息中挖掘潛在的模式和趨勢，為金融機構提供更全面的詐騙風險評估。</p>
+
+    <h2>大數據分析的方法</h2>
+    <h3>行為分析</h3>
+    <p>藉由搜集正常的用戶行為並分析用戶的交易信息，系統可以建構基本行為模式。當出現不尋常的行為，系統可以發出警報，如大額交易、異地交易或非常規時間的交易。</p>
+    <h3>自動化決策</h3>
+    <p>將大數據和自動化決策系統結合，當系統檢測到異常活動時，能自動啟動預先的防範措施，如暫停交易、通知用戶，向相關機構報告。</p>
+
+    <h2>大數據結合ＡＩ</h2>
+    <p>舉例：大數據分析犯罪樣態，銀行推AI防阻詐騙。銀行與刑事局聯合建置金融詐騙偵測暨預警機制，透過AI與大數據技術來分析詐欺類型與交易模式，找出案件共通性與預警指標。</p>
+    <p><strong>K-means 聚集分析</strong></p>
+    <ul>
+        <li>對所有數據進行分組，將相似的數據聚集，並找出不屬於任一群集的異常數據</li>
+        <li>輸入：大量交易數據（金額、地點、類型等）</li>
+        <li>Step1: 決定分群數量，也就是Ｋ的值</li>
+            <div id="kMeansImage1">
+                <img src="./Group6.png" alt="圖片1">
+            </div>
+        <li>Step2: 隨機選取Ｋ個點作為群集中心</li>
+            <div id="kMeansImage2">
+                <img src="./Group6-2.png" alt="圖片2">
+            </div>
+        <li>Step3: 將各點分類到離自己最近的群集中心</li>
+            <div id="kMeansImage3">
+                <img src="./Group6-3.png" alt="圖片3">
+            </div>
+        <li>Step4: 重複Step2~4，直到群集不變，群集中心不動為止</li>
+        <li>輸出：根據分析結果，可以從群集中近一步分析各數據之共通點，並發現異常數據預警指標，識別出潛在詐欺活動的指標或模式</li>
+        <li>資料來源：銀行交易紀錄、在線平台交易數據等</li>
+    </ul>
+
+    <h2>未來發展</h2>
+    <p><strong>實時監控</strong></p>
+    <p>運用大數據技術，金融機構可以實時監控大量交易數據，以檢測任何異常的交易活動，有助於迅速發現可能的詐騙行為，並立即採取行動。</p>
+    <p><strong>結合機器學習和人工智慧</strong></p>
+    <p>未來能結合機器學習算法和人工智慧技術，建立更先進的詐騙檢測系統，學習詐騙者的行為模式，並隨時間不斷進化，應對新型詐騙手法。</p>
+
+    <h2>challenge & solution</h2>
+    <p><strong>資料品質</strong></p>
+    <ul>
+        <li>確保資料來源的正確性及可信度</li>
+        <li>數據清理（Data Cleansing）：對缺失、異常和重複值進行清理</li>
+        <li>數據標準化（Standardization）：統一數據格式和單位</li>
+        <li>特徵工程（Feature Engineering）：轉換、建構（新增）、降維（減少）</li>
+    </ul>
+
+    <h2>Advantages</h2>
+    <ul>
+        <li>原理簡單</li>
+        <li>計算速度快</li>
+        <li>易於執行和解釋</li>
+        <li>具備可擴展性，能處理大量數據集</li>
+    </ul>
+
+    <h2>Limitations</h2>
+    <ul>
+        <li>必須先決定分群的數目（Ｋ值）</li>
+        <li>結果會受Ｋ值和中心點位置影響，若設定有誤，將有失準確性</li>
+        <li>依歐基李德距離進行分群，但不適用於非數字和非分類的數據</li>
+    </ul>
+</body>
+
+</html>
